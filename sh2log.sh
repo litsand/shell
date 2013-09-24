@@ -10,7 +10,7 @@ tar zxf sh2log-1.0.tgz
 cd sh2log-1.0
 DIS=`head /etc/issue -n 1|awk '{print $1}'`
 if [ $DIS = "CentOS" ];then
-yum install libX11-devel
+yum install -y libX11-devel
 elif [ $DIS = "Ubuntu" ] ; then
 apt-get install -y libx11-dev
 fi
